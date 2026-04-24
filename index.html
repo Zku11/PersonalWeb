@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lucas Antu Fernández</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
+    body {
+      background-image: url("Images/BodyBackground.png");
+    }
+
+    section {
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    #contact {
+      height: 100vh;
+    }
+
+    footer {
+      text-align: center;
+      margin: 0;
+      padding: 30px;
+      background: #020617;
+      color: #64748b;
+    }
+
+    .yellow-background {
+      backdrop-filter: blur(3px);
+      background-color: rgba(40, 40, 40, 0.9);
+    }
+
+    .clear-background {
+      background-color: #fff;
+    }
+
+    .navbar-background {
+      background-color: #2d6cc4;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    .name-text {
+      color: black;
+      font-size: 3em;
+    }
+
+    .nav-link {
+      background-color: rgb(255 255 255 / 0);
+      border-radius: 5px;
+    }
+
+    .nav-link.active {
+      transition: all 0.5s ease;
+      transition-delay: 0.2s;
+      background-color: rgb(0 0 0 / 0.5);
+    }
+
+    .card-description-text {
+      text-align: justify;
+      color: #000;
+    }
+
+    .profesional-profile {
+      text-align: justify;
+    }
+
+    .reveal {
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .icon-item {
+      height: 30px;
+    }
+
+    .reveal.active {
+      opacity: 1;
+    }
+
+    .icon-medium {
+      height: 30px;
+    }
+
+    .icon-small {
+      height: 30px;
+    }
+
+    .small-text {
+      font-size: 3px;
+    }
+
+    img {
+      opacity: 0.9;
+    }
+
+    .job-subtitle {
+      margin-bottom: 5%;
+    }
+
+    .job-duration {
+      color: #666;
+    }
+
+    .text-white {
+      text-shadow: 0 0 15px #666;
+    }
+
+    .card-description-text {
+      height: 100px;
+    }
+
+    .skill-text {
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-background fixed-top" data-bs-theme="dark">
+      <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-3">
+            <a class="nav-link px-3 active" href="#about">Sobre Mí</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link px-3" href="#experience">Experiencia</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link px-3" href="#education">Formación</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link px-3" href="#webProjects">Proyectos Web</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link px-3" href="#gameProjects">Videojuegos</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link px-3" href="#contact">Contacto y Redes</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container-fluid">
+    <div data-bs-spy="scroll" data-bs-target="#navbar">
+      <!--About me-->
+      <section id="about" class="row pt-5 bg-gradient yellow-background justify-content-center">
+        <div class="row justify-content-center mt-5 mb-2">
+          <div class="col-12 col-lg-2 my-auto">
+            <img class="rounded-circle" style="height:175px;" src="profileImg.jpg" />
+          </div>
+          <div class="col-12 col-lg-4 my-auto fw-bold py-4 text-white">
+            <div class="row">
+              <h1 class="display-5 py-2 fw-bold">Lucas A. Fernández</h1>
+            </div>
+            <div class="row icon-item reveal" style="transition-delay:0.1s">
+              <span class="job-position-text fs-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 20 20">
+                  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
+                </svg>
+                Desarrollador Unity
+              </span>
+            </div>
+            <div class="row icon-item reveal" style="transition-delay:0.2s">
+              <span class="job-position-text fs-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 20 20">
+                  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
+                </svg>
+                Desarrollador ASP.NET Core
+              </span>
+            </div>
+            <div class="row icon-item reveal" style="transition-delay:0.3s">
+              <span class="job-position-text fs-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 20 20">
+                  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z" />
+                  <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
+                </svg>
+                Licenciado en Informática
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5 reveal" style="transition-delay:0.6s">
+          <div class="col-12 col-md-7 col-lg-9">
+            <p class="fs-5 pt-4 pt-md-1 profesional-profile text-white">
+              Licenciado en Informática especializado en desarrollo de software, con experiencia profesional en desarrollo de videojuegos con C# y Unity;
+              y actualmente ampliando mi perfil hacia el desarrollo backend con ASP.NET Core, aplicando buenas prácticas, patrones de diseño,
+              arquitectura limpia y principios SOLID.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5 text-black">
+          <div class="col-12 col-md-6 col-lg-3 mb-3 reveal" style="transition-delay:1.1s">
+            <div class="row p-3 me-md-1 me-lg-1 justify-content-center clear-background rounded">
+              <div class="fs-5 col-12 mb-3">Videojuegos</div>
+              <div class="col-6 col-xl-3">
+                <img class="col-12 icon-medium img-fluid" src="./Images/Logos/cSharp.svg" />
+                <span class="skill-text">C#</span>
+              </div>
+              <div class="col-6 col-xl-3">
+                <img class="col-12 icon-medium img-fluid rounded" src="./Images/Logos/unityLogo.svg" />
+                <span class="skill-text">Unity</span>
+              </div>
+              <div class="col-3 col-xl-3">
+                <img class="col-12 icon-medium img-fluid rounded" src="./Images/Logos/ork_3_logo.png" />
+                <span class="skill-text">Ork 3</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3 reveal" style="transition-delay:1.2s">
+            <div class="row p-3 justify-content-center clear-background rounded">
+              <div class="fs-5 col-12 mb-3">Backend</div>
+              <div class="col-6 col-xl-3">
+                <img class="col-12 icon-medium img-fluid" src="./Images/Logos/cSharp.svg" />
+                <span class="skill-text">C#</span>
+              </div>
+              <div class="col-6 col-xl-3">
+                <img class="col-12 icon-medium img-fluid" src="./Images/Logos/netframework-1.svg" />
+                <span class="skill-text">ASP.NET</span>
+              </div>
+              <div class="col-6 col-xl-3">
+                <img class="col-12 icon-medium img-fluid" src="./Images/Logos/sql-server2022.svg" />
+                <span class="skill-text">SQL Server</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 mb-3 reveal " style="transition-delay:1.3s">
+            <div class="row p-3 ms-lg-1 justify-content-center clear-background rounded">
+              <div class="fs-5 col-12 mb-3">Frontend</div>
+              <div class="col-6 col-xl-3">
+                <img class="col-12 icon-medium img-fluid rounded" src="./Images/Logos/javascript.svg" />
+                <span class="skill-text">JavaScript</span>
+              </div>
+              <div class="col-6 col-xl-3">
+                <img class="col-12 icon-medium img-fluid rounded" src="./Images/Logos/html.svg" />
+                <span class="skill-text">HTML</span>
+              </div>
+              <div class="col-6 col-xl-3">
+                <img class="col-12 icon-medium img-fluid rounded" src="./Images/Logos/css.svg" />
+                <span class="skill-text">CSS</span>
+              </div>
+              <div class="col-6 col-xl-3">
+                <img class="col-12 icon-medium img-fluid rounded" src="./Images/Logos/boostrap.svg" />
+                <span class="skill-text">Boostrap</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Experience-->
+      <section id="experience" class="row pt-5 bg-gradient yellow-background">
+        <div class="display-6 pt-5 col-12 h-25 text-white">Experiencia</div>
+        <div class="accordion my-5 mx-auto col-12 col-md-10 col-lg-8" id="experienceExample">
+          <div class="accordion-item mb-5 reveal" style="transition-delay:0.1s">
+            <div class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="fs-5 fw-bold">Desarrollador Unity</h3>
+                  </div>
+                  <div class="col-10 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                      <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                      <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z" />
+                    </svg>
+                    <span class="job-subtitle">Team Brunomir</span>
+                  </div>
+                  <div class="col-12">
+                    <span class="job-duration">Abril 2025 - Enero 2026</span>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#experienceExample">
+              <div class="accordion-body">
+                <p>
+                  En Team Brunomir participé en la programación de 2 prototipos de RPG por turnos, uno de ellos llamado Dungeon Dread;
+                  y estuve a cargo de la programación del juego Otra Orilla, una novela visual.
+                </p>
+                <ul class="text-start">
+                  <li>Desarrollo de videojuegos utilizando Unity y C#, integrando frameworks especializados como ORK Framework 3 (RPG) y Naninovel (novelas visuales).</li>
+                  <li>Diseño e implementación de sistemas modulares con arquitectura desacoplada.</li>
+                  <li>Adaptación y extensión de funcionalidades provistas por frameworks para ajustarse a mecánicas propias del proyecto.</li>
+                  <li><strong>Unity, C#, ORK Framework 3, Naninovel.</strong></li>
+                </ul>
+                <div class="col-4">
+                  <a class="btn btn-primary fs-6 p-1 w-100 rounded-pill" target="_blank" href="https://agostinaco.itch.io/otra-orilla">
+                    Ver juego Otra Orilla
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mb-5 reveal" style="transition-delay:0.1s">
+            <div class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="fs-5 fw-bold">Desarrollador Unity</h3>
+                  </div>
+                  <div class="col-10 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                      <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                      <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z" />
+                    </svg>
+                    <span class="job-subtitle">Livemedia Digital Agency</span>
+                  </div>
+                  <div class="col-12">
+                    <span class="job-duration">Junio 2023 - Marzo 2024</span>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#experienceExample">
+              <div class="accordion-body">
+                <p>
+                  En Livemedia Digital Agency continué con el desarrollo de un juego móvil llamado Ligth Off, desarrollé un juego completo llamado Sea Pets
+                  y participé en el desarrollo de juegos web desarrollados con Phaser.js y A-frame.
+                  También hice correcciones de calidad en juegos móviles antiguos de la empresa.
+                </p>
+                <ul class="text-start">
+                  <li>Desarrollo videojuegos para dispositivos Android utilizando Unity y C#, desde la lógica de gameplay hasta la publicación.</li>
+                  <li>Mantenimiento y corrección de errores en proyectos existentes, mejorando estabilidad y rendimiento.</li>
+                  <li>Continuación de videojuegos web existentes, adaptando y extendiendo funcionalidades en base a nuevos requerimientos.</li>
+                  <li><strong>Tecnologías: Unity, C#, JavaScript.</strong></li>
+                </ul>
+                <div class="row">
+                  <div class="col-4">
+                    <a class="btn btn-primary fs-6 p-1 w-100 rounded-pill" target="_blank" href="https://play.google.com/store/apps/details?id=com.Livemedia.SeaPetsMatchMerge">
+                      Ver juego Sea Pets
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a class="btn btn-primary fs-6 p-1 w-100 rounded-pill" target="_blank" href="https://play.google.com/store/apps/details?id=com.Livemedia.LightOff">
+                      Ver juego Light Off
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mb-5 reveal" style="transition-delay:0.1s">
+            <div class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="fs-5 fw-bold">Desarrollador De Software Freelance</h3>
+                  </div>
+                  <div class="col-10 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                      <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                      <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z" />
+                    </svg>
+                    <span class="job-subtitle">Autónomo</span>
+                  </div>
+                  <div class="col-12">
+                    <span class="job-duration">Enero 2017 - Marzo 2023</span>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#experienceExample">
+              <div class="accordion-body">
+                <p>
+
+                </p>
+                <ul class="text-start">
+                  <li>
+                    Desarrollo de videojuegos originales utilizando principalmente Unity y C#.
+                  </li>
+                  <li>
+                    Publicación de múltiples videojuegos comerciales en Steam, logrando buenas calificaciones de usuarios en general.
+                  </li>
+                  <li>Desarrollo de aplicaciones web.</li>
+                  <li>Desarrollo de aplicaciones móviles para Android con Android Studio y Java.</li>
+                  <li><strong>Tecnologías: Unity, C#, JavaScript, Java, PHP.</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Education-->
+      <section id="education" class="row pt-5 bg-gradient  yellow-background">
+        <div class="display-6 pt-5 col-12 h-25 text-white">Formación</div>
+        <div class="col-12 col-md-10 col-lg-8 accordion my-5 mx-auto" id="educationAccordion">
+          <div class="accordion-item mb-5 reveal" style="transition-delay:0.1s">
+            <div class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#educationCollapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="fs-5 fw-bold">Licenciado en Informática</h3>
+                  </div>
+                  <div class="col-10 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                      <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                      <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z" />
+                    </svg>
+                    <span class="job-subtitle">Universidad Siglo 21</span>
+                  </div>
+                  <div class="col-12">
+                    <span class="job-duration">2016 - 2023</span>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div id="educationCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+              <div class="accordion-body">
+                <a class="mb-2 btn btn-primary rounded-pill" target="_blank" href="https://bitsionstorage02.blob.core.windows.net/tucarpeta-ues21/d67d4bd0-a0f9-4048-bbe4-c923d0bac00a/32981275-FERNANDEZ-LUCAS%20ANTU-LICENCIATURA%20EN%20INFORM%c3%81TICA-Titulo%20Oficial-.pdf">
+                  Ver título en repositorio
+                </a>
+                <img class="img-fluid" src="./Images/Certificates/siglo21title.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mb-5 reveal" style="transition-delay:0.1s">
+            <div class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#educationCollapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="fs-5 fw-bold">Desarrollo Web Fullstack</h3>
+                  </div>
+                  <div class="col-10 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                      <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                      <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z" />
+                    </svg>
+                    <span class="job-subtitle">Codo a Codo 4.0</span>
+                  </div>
+                  <div class="col-12">
+                    <span class="job-duration">Marzo 2021 - Octubre 2021</span>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div id="educationCollapseThree" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+              <div class="accordion-body">
+                <img class="img-fluid" src="./Images/Certificates/codoAcodoTitle.png" />
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mb-5 reveal" style="transition-delay:0.1s">
+            <div class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-target="#educationCollapseFour" aria-expanded="false" aria-controls="educationCollapseFour">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="fs-5 fw-bold">Técnico Superior en Telecomunicaciones</h3>
+                  </div>
+                  <div class="col-10 mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                      <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                      <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z" />
+                    </svg>
+                    <span class="job-subtitle">Instituto Superior Santo Domingo</span>
+                  </div>
+                  <div class="col-12">
+                    <span class="job-duration">2014 - 2016 (incompleto)</span>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div id="educationCollapseFour" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+              <div class="accordion-body">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Web Projects-->
+      <section id="webProjects" class="row py-5 justify-content-center px-5 bg-gradient yellow-background">
+        <div class="display-6 py-5 col-12 h-25 text-white">Proyectos Web</div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 gx-3 reveal mb-4" style="transition-delay:0.1s">
+          <div class="card">
+            <div id="carouselExampleIndicatorsWP1" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicatorsWP1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsWP1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsWP1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Images/Proyectos/MyVirtualRepresentative/screenshot1.png" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/Proyectos/MyVirtualRepresentative/screenshot2.png" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/Proyectos/MyVirtualRepresentative/screenshot3.png" class="d-block w-100 rounded" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsWP1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsWP1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">My virtual representative</h5>
+              <p class="card-description-text">
+                Es un chat que cumple la función de representar a una persona. En mi caso puedes conversar sobre en qué áreas me especialicé, estudios cursados, experiencia laboral, etc.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExampleWP1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneWP1" aria-expanded="false" aria-controls="collapseOneWP1">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseOneWP1" class="accordion-collapse collapse" data-bs-parent="#accordionExampleWP1">
+                  <div class="accordion-body">
+                    Tecnologías:
+                    <div class="row justify-content-center">
+                      HTML | CSS | JavaScript
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <a href="My-virtual-representative/index.html" target="_blank" class="btn btn-primary rounded-pill">Ir a la web</a>
+              <a href="https://github.com/Zku11/-My-virtual-representative" target="_blank" class="btn btn-primary rounded-pill">Ver en GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 gx-3 reveal mb-4" style="transition-delay:0.2s">
+          <div class="card">
+            <div id="carouselExampleIndicatorsWP2" class="carousel carousel-dark slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicatorsWP2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsWP2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsWP2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Images/Proyectos/BudgetCalculator/screenshot1.png" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/Proyectos/BudgetCalculator/screenshot2.png" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/Proyectos/BudgetCalculator/screenshot3.png" class="d-block w-100 rounded" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsWP2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsWP2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Budget Calculator</h5>
+              <p class="card-description-text">
+                Estoy desarrollando esta aplicación web utilizando ASP.NET Core, que permite registrar y clasificar ingresos y gastos, así como generar informes.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExampleWP2">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneWP2" aria-expanded="false" aria-controls="collapseOneWP2">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseOneWP2" class="accordion-collapse collapse" data-bs-parent="#accordionExampleWP2">
+                  <div class="accordion-body">
+                    Tecnologías:
+                    <div class="row justify-content-center">
+                      HTML | CSS | JavaScript | Boostrap
+                      <br>
+                      ASP.NET Core | MVC | SQL Server | Dapper
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <a href="https://github.com/Zku11/BudgetManager" target="_blank" class="btn btn-primary rounded-pill">Ver en GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Game Proyects-->
+      <section id="gameProjects" class="row py-5 justify-content-center px-5 bg-gradient yellow-background">
+        <div class="display-6 py-5 col-12 h-25 text-white">Videojuegos</div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 gx-3 pb-4 reveal" style="transition-delay:0.1s">
+          <div class="card">
+            <div id="carouselExampleIndicatorsGP1" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicatorsGP1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsGP1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsGP1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Images/Proyectos/geniusAtWork/gawScreenshot1.jpg" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/Proyectos/geniusAtWork/gawScreenshot2.jpg" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/Proyectos/geniusAtWork/gawScreenshot3.jpg" class="d-block w-100 rounded" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsGP1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsGP1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Genius At Work!</h5>
+              <p class="card-description-text">
+                Genius at work! es un videojuego de construcción libre por bloques, en el cual puedes construir máquinas y estructuras simples,
+                usando piezas del tipo estructural, eléctrico y mecánico.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExampleGP1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneGP1" aria-expanded="false" aria-controls="collapseOneGP1">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseOneGP1" class="accordion-collapse collapse" data-bs-parent="#accordionExampleGP1">
+                  <div class="accordion-body">
+                    Tecnologías:
+                    <div class="row justify-content-center">
+                      <div class="col-5 col-sm-2">
+                        <img class="icon-small img-fluid" src="./Images/Logos/unityLogo.svg" />
+                      </div>
+                      <div class="col-5 col-sm-2">
+                        <img class="icon-small img-fluid" src="./Images/Logos/cSharp.svg" />
+                      </div>
+                      <div class="col-12 mt-4">
+                        Lanzado en 2020 - Disponible para Windows
+                      </div>
+                      <div class="col-12 mt-4">
+                        <video class="w-100" controls muted>
+                          <source src="Images/Proyectos/geniusAtWork/gawvideo.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <a href="https://store.steampowered.com/app/1467580/GENIUS_AT_WORK/" target="_blank" class="btn btn-primary rounded-pill">Ver en Steam</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 gx-3 pb-4 reveal" style="transition-delay:0.2s">
+          <div class="card">
+            <div id="carouselExampleIndicatorsGP2" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicatorsGP2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsGP2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsGP2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Images/Proyectos/quadrupedMatch/screenshot1.png" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/Proyectos/quadrupedMatch/screenshot2.png" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/Proyectos/quadrupedMatch/screenshot3.png" class="d-block w-100 rounded" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsGP2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsGP2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Quadruped Match</h5>
+              <p class="card-description-text">
+                En este videojuego controlas un robot cuadrúpedo capaz de atravesar cualquier tipo de obstáculo. Posee una demo disponible en Steam.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExampleGP2">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneGP2" aria-expanded="false" aria-controls="collapseOneGP2">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseOneGP2" class="accordion-collapse collapse" data-bs-parent="#accordionExampleGP2">
+                  <div class="accordion-body">
+                    Tecnologías:
+                    <div class="row justify-content-center">
+                      <div class="col-5 col-sm-2">
+                        <img class="icon-small img-fluid" src="./Images/Logos/unityLogo.svg" />
+                      </div>
+                      <div class="col-5 col-sm-2">
+                        <img class="icon-small img-fluid" src="./Images/Logos/cSharp.svg" />
+                      </div>
+                      <div class="col-12 mt-4">
+                        Lanzado en 2024 - Disponible para Windows
+                      </div>
+                      <div class="col-12 mt-4">
+                        <video class="w-100" controls muted>
+                          <source src="Images/Proyectos/quadrupedMatch/trailer.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <a href="https://store.steampowered.com/app/3310200/Quadruped_Match/" target="_blank" class="btn btn-primary rounded-pill">Ver en Steam</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 gx-3 pb-3 reveal" style="transition-delay:0.3s">
+          <div class="card">
+            <div id="carouselExampleIndicatorsGP3" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicatorsGP3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsGP3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsGP3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Images/Proyectos/protoAkane/screenshot1.png" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/Proyectos/protoAkane/screenshot2.png" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/Proyectos/protoAkane/screenshot3.png" class="d-block w-100 rounded" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsGP3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsGP3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Proto Akane</h5>
+              <p class="card-description-text">
+                En este videojuego controlas un vehículo capaz de equipar y combinar diferentes partes para resolver diferentes situaciones y puzzles.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExampleGP3">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneGP3" aria-expanded="false" aria-controls="collapseOneGP3">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseOneGP3" class="accordion-collapse collapse" data-bs-parent="#accordionExampleGP3">
+                  <div class="accordion-body">
+                    Tecnologías:
+                    <div class="row justify-content-center">
+                      <div class="col-5 col-sm-2">
+                        <img class="icon-small img-fluid" src="./Images/Logos/unityLogo.svg" />
+                      </div>
+                      <div class="col-5 col-sm-2">
+                        <img class="icon-small img-fluid" src="./Images/Logos/cSharp.svg" />
+                      </div>
+                      <div class="col-12 mt-4">
+                        Lanzado en 2022 - Disponible para Windows
+                      </div>
+                      <div class="col-12 mt-4">
+                        <video class="w-100" controls muted>
+                          <source src="Images/Proyectos/protoAkane/trailer.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <a href="https://store.steampowered.com/app/1897870/Proto_Akane/?curator_clanid=43858530" target="_blank" class="btn btn-primary rounded-pill">Ver en Steam</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 gx-3 pb-3 reveal" style="transition-delay:0.4s">
+          <div class="card">
+            <div id="carouselExampleIndicatorsGP4" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicatorsGP4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsGP4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsGP4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Images/Proyectos/botschaos/screen1.png" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/Proyectos/botschaos/screen2.png" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/Proyectos/botschaos/screen3.png" class="d-block w-100 rounded" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsGP4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsGP4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Bots Chaos</h5>
+              <p class="card-description-text">
+                Bots Chaos es un juego FPS de acción en el que debes destruir muchos robots para superar una puntuación en 10 minutos.
+                Posees ralentización del tiempo ilimitada.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExampleGP4">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneGP4" aria-expanded="false" aria-controls="collapseOneGP4">
+                    Más información
+                  </button>
+                </h2>
+                <div id="collapseOneGP4" class="accordion-collapse collapse" data-bs-parent="#accordionExampleGP4">
+                  <div class="accordion-body">
+                    Tecnologías:
+                    <div class="row justify-content-center">
+                      <div class="col-5 col-sm-2">
+                        <img class="icon-small img-fluid" src="./Images/Logos/unityLogo.svg" />
+                      </div>
+                      <div class="col-5 col-sm-2">
+                        <img class="icon-small img-fluid" src="./Images/Logos/cSharp.svg" />
+                      </div>
+                      <div class="col-12 mt-4">
+                        Lanzado en 2023 - Disponible para Windows
+                      </div>
+                      <div class="col-12 mt-4">
+                        <video class="w-100" controls muted>
+                          <source src="Images/Proyectos/botschaos/trailer.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <a href="https://store.steampowered.com/app/2336970/Bots_Chaos/?curator_clanid=43858530" target="_blank" class="btn btn-primary rounded-pill">Ver en Steam</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 py-5 justify-content-center icon-item reveal" style="transition-delay:0.0s">
+          <span class="fs-5">
+            <a class="btn btn-primary rounded-pill" rel="noreferrer" target="_blank" href="https://lucas-fernandez.itch.io/">Ver más juegos</a>
+          </span>
+        </div>
+      </section>
+      <!--Contact-->
+      <section id="contact" class="row py-5 justify-content-center yellow-background bg-gradient">
+        <div class="display-6 py-5 col-12 text-white">Contacto y Redes</div>
+        <div class="col-12 col-md-5 col-lg-2 mb-5 icon-item reveal" style="transition-delay:0.0s">
+          <a class="btn btn-primary fs-5 p-3 w-100" target="_blank" href="LucasAntuFernándezCV.pdf" download="LucasAntuFernándezCV.pdf">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
+              <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0m2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755" />
+            </svg>
+            CV
+          </a>
+        </div>
+        <div class="col-12 col-md-5 col-lg-2 mb-5 icon-item reveal" style="transition-delay:0.1s">
+          <a class="btn btn-secondary fs-5 p-3 w-100" rel="noreferrer" target="_blank" href="mailto:lucaferan@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+              <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />
+              <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+            </svg>
+            E-mail
+          </a>
+        </div>
+        <div class="col-12 col-md-5 col-lg-2 mb-5 icon-item reveal" style="transition-delay:0.2s">
+          <a class="btn btn-secondary fs-5 p-3 w-100" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/lucasferr87/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+            </svg>
+            Linkedin
+          </a>
+        </div>
+        <div class="col-12 col-md-5 col-lg-2 mb-5 icon-item reveal" style="transition-delay:0.3s">
+          <a class="btn btn-secondary fs-5 p-3 w-100" rel="noreferrer" target="_blank" href="https://github.com/Zku11">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+            </svg>
+            GitHub
+          </a>
+        </div>
+        <div class="col-12 col-md-5 col-lg-2 mb-5 icon-item reveal" style="transition-delay:0.4s">
+          <a class="btn btn-secondary fs-5 p-3 w-100" rel="noreferrer" target="_blank" href="https://www.youtube.com/@lucasfernandez2700">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+            </svg>
+            YouTube
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer class="text-white align-items-center navbar-background">
+    © 2026 - Lucas Antu Fernández
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
