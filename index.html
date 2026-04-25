@@ -15,7 +15,7 @@
     }
 
     body {
-      background-image: url("Images/BodyBackground.png");
+      background: url("Images/BodyBackground.png") center fixed;
     }
 
     section {
@@ -36,7 +36,7 @@
     }
 
     .yellow-background {
-      backdrop-filter: blur(3px);
+      backdrop-filter: blur(2px);
       background-color: rgba(40, 40, 40, 0.9);
     }
 
@@ -64,7 +64,7 @@
 
     .nav-link.active {
       transition: all 0.5s ease;
-      transition-delay: 0.2s;
+      transition-delay: 0;
       background-color: rgb(0 0 0 / 0.5);
     }
 
@@ -120,10 +120,6 @@
 
     .card-description-text {
       height: 100px;
-    }
-
-    .skill-text {
-      /*font-size: 10px;*/
     }
   </style>
 </head>
@@ -197,7 +193,7 @@
           </div>
         </div>
         <div class="row justify-content-center mb-5 reveal" style="transition-delay:0.6s">
-          <div class="col-12 col-md-7 col-lg-9">
+          <div class="col-12 col-md-8 col-lg-10">
             <p class="fs-5 pt-4 pt-md-1 profesional-profile text-white">
               Licenciado en Informática especializado en desarrollo de software, con experiencia profesional en desarrollo de videojuegos con C# y Unity;
               y actualmente ampliando mi perfil hacia el desarrollo backend con ASP.NET Core, aplicando buenas prácticas, patrones de diseño,
@@ -209,15 +205,15 @@
           <div class="col-12 col-md-6 col-lg-4 mb-3 reveal" style="transition-delay:1.1s">
             <div class="row p-3 me-md-1 me-lg-1 justify-content-center clear-background rounded">
               <div class="fs-5 col-12 mb-3">Videojuegos</div>
-              <div class="col-6 col-xl-3">
+              <div class="col-6 col-xl-3 g-2">
                 <img class="col-12 icon-medium img-fluid" src="./Images/Logos/cSharp.svg" />
                 <span class="skill-text">C#</span>
               </div>
-              <div class="col-6 col-xl-3">
+              <div class="col-6 col-xl-3 g-2">
                 <img class="col-12 icon-medium img-fluid rounded" src="./Images/Logos/unityLogo.svg" />
                 <span class="skill-text">Unity</span>
               </div>
-              <div class="col-3 col-xl-3">
+              <div class="col-3 col-xl-3 g-2">
                 <img class="col-12 icon-medium img-fluid rounded" src="./Images/Logos/ork_3_logo.png" />
                 <span class="skill-text">Ork 3</span>
               </div>
@@ -226,15 +222,15 @@
           <div class="col-12 col-md-6 col-lg-4 mb-3 reveal" style="transition-delay:1.2s">
             <div class="row p-3 justify-content-center clear-background rounded">
               <div class="fs-5 col-12 mb-3">Backend</div>
-              <div class="col-6 col-xl-3">
+              <div class="col-6 col-xl-3 g-2">
                 <img class="col-12 icon-medium img-fluid" src="./Images/Logos/cSharp.svg" />
                 <span class="skill-text">C#</span>
               </div>
-              <div class="col-6 col-xl-3">
+              <div class="col-6 col-xl-3 g-2">
                 <img class="col-12 icon-medium img-fluid" src="./Images/Logos/netframework-1.svg" />
                 <span class="skill-text">ASP.NET</span>
               </div>
-              <div class="col-6 col-xl-3">
+              <div class="col-6 col-xl-3 g-2">
                 <img class="col-12 icon-medium img-fluid" src="./Images/Logos/sql-server2022.svg" />
                 <span class="skill-text">SQL Server</span>
               </div>
@@ -243,19 +239,19 @@
           <div class="col-12 col-lg-4 mb-3 reveal " style="transition-delay:1.3s">
             <div class="row p-3 ms-lg-1 justify-content-center clear-background rounded">
               <div class="fs-5 col-12 mb-3">Frontend</div>
-              <div class="col-6 col-xl-3">
+              <div class="col-6 col-xl-3 g-2">
                 <img class="col-12 icon-medium img-fluid rounded" src="./Images/Logos/javascript.svg" />
                 <span class="skill-text">JavaScript</span>
               </div>
-              <div class="col-6 col-xl-3">
+              <div class="col-6 col-xl-3 g-2">
                 <img class="col-12 icon-medium img-fluid rounded" src="./Images/Logos/html.svg" />
                 <span class="skill-text">HTML</span>
               </div>
-              <div class="col-6 col-xl-3">
+              <div class="col-6 col-xl-3 g-2">
                 <img class="col-12 icon-medium img-fluid rounded" src="./Images/Logos/css.svg" />
                 <span class="skill-text">CSS</span>
               </div>
-              <div class="col-6 col-xl-3">
+              <div class="col-6 col-xl-3 g-2">
                 <img class="col-12 icon-medium img-fluid rounded" src="./Images/Logos/boostrap.svg" />
                 <span class="skill-text">Boostrap</span>
               </div>
@@ -422,10 +418,10 @@
             </div>
             <div id="educationCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
               <div class="accordion-body">
-                <a class="mb-2 btn btn-primary rounded-pill" target="_blank" href="https://bitsionstorage02.blob.core.windows.net/tucarpeta-ues21/d67d4bd0-a0f9-4048-bbe4-c923d0bac00a/32981275-FERNANDEZ-LUCAS%20ANTU-LICENCIATURA%20EN%20INFORM%c3%81TICA-Titulo%20Oficial-.pdf">
+                <a class="mb-2 btn btn-primary col-12 col-lg-4 rounded-pill" target="_blank" href="https://bitsionstorage02.blob.core.windows.net/tucarpeta-ues21/d67d4bd0-a0f9-4048-bbe4-c923d0bac00a/32981275-FERNANDEZ-LUCAS%20ANTU-LICENCIATURA%20EN%20INFORM%c3%81TICA-Titulo%20Oficial-.pdf">
                   Ver título en repositorio
                 </a>
-                <img class="img-fluid" src="./Images/Certificates/siglo21title.jpg" />
+                <img class="img-fluid rounded" src="./Images/Certificates/siglo21title.jpg" />
               </div>
             </div>
           </div>
@@ -451,7 +447,7 @@
             </div>
             <div id="educationCollapseThree" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
               <div class="accordion-body">
-                <img class="img-fluid" src="./Images/Certificates/codoAcodoTitle.png" />
+                <img class="img-fluid rounded" src="./Images/Certificates/codoAcodoTitle.png" />
               </div>
             </div>
           </div>
@@ -529,16 +525,14 @@
                 <div id="collapseOneWP1" class="accordion-collapse collapse" data-bs-parent="#accordionExampleWP1">
                   <div class="accordion-body">
                     Tecnologías:
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center mb-3">
                       HTML | CSS | JavaScript
                     </div>
+                    <a href="My-virtual-representative/index.html" target="_blank" class="btn btn-primary col-12 col-lg-5 mb-3 mb-lg-0 rounded-pill">Ir a la web</a>
+                    <a href="https://github.com/Zku11/-My-virtual-representative" target="_blank" class="btn btn-primary col-12 col-lg-6 rounded-pill">Ver en GitHub</a>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card-body">
-              <a href="My-virtual-representative/index.html" target="_blank" class="btn btn-primary rounded-pill">Ir a la web</a>
-              <a href="https://github.com/Zku11/-My-virtual-representative" target="_blank" class="btn btn-primary rounded-pill">Ver en GitHub</a>
             </div>
           </div>
         </div>
@@ -586,17 +580,15 @@
                 <div id="collapseOneWP2" class="accordion-collapse collapse" data-bs-parent="#accordionExampleWP2">
                   <div class="accordion-body">
                     Tecnologías:
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center mb-3">
                       HTML | CSS | JavaScript | Boostrap
                       <br>
                       ASP.NET Core | MVC | SQL Server | Dapper
                     </div>
+                    <a href="https://github.com/Zku11/BudgetManager" target="_blank" class="btn btn-primary col-12 col-lg-6 rounded-pill">Ver en GitHub</a>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card-body">
-              <a href="https://github.com/Zku11/BudgetManager" target="_blank" class="btn btn-primary rounded-pill">Ver en GitHub</a>
             </div>
           </div>
         </div>
@@ -659,19 +651,17 @@
                       <div class="col-12 mt-4">
                         Lanzado en 2020 - Disponible para Windows
                       </div>
-                      <div class="col-12 mt-4">
+                      <div class="col-12 mt-4 mb-3">
                         <video class="w-100" controls muted>
                           <source src="Images/Proyectos/geniusAtWork/gawvideo.mp4" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                       </div>
+                      <a href="https://store.steampowered.com/app/1467580/GENIUS_AT_WORK/" target="_blank" class="btn btn-primary col-12 col-lg-6 rounded-pill">Ver en Steam</a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card-body">
-              <a href="https://store.steampowered.com/app/1467580/GENIUS_AT_WORK/" target="_blank" class="btn btn-primary rounded-pill">Ver en Steam</a>
             </div>
           </div>
         </div>
@@ -729,19 +719,17 @@
                       <div class="col-12 mt-4">
                         Lanzado en 2024 - Disponible para Windows
                       </div>
-                      <div class="col-12 mt-4">
+                      <div class="col-12 mt-4 mb-3">
                         <video class="w-100" controls muted>
                           <source src="Images/Proyectos/quadrupedMatch/trailer.mp4" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                       </div>
+                      <a href="https://store.steampowered.com/app/3310200/Quadruped_Match/" target="_blank" class="btn btn-primary col-12 col-lg-6 rounded-pill">Ver en Steam</a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card-body">
-              <a href="https://store.steampowered.com/app/3310200/Quadruped_Match/" target="_blank" class="btn btn-primary rounded-pill">Ver en Steam</a>
             </div>
           </div>
         </div>
@@ -799,19 +787,17 @@
                       <div class="col-12 mt-4">
                         Lanzado en 2022 - Disponible para Windows
                       </div>
-                      <div class="col-12 mt-4">
+                      <div class="col-12 mt-4 mb-3">
                         <video class="w-100" controls muted>
                           <source src="Images/Proyectos/protoAkane/trailer.mp4" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                       </div>
+                      <a href="https://store.steampowered.com/app/1897870/Proto_Akane/?curator_clanid=43858530" target="_blank" class="btn btn-primary col-12 col-lg-6 rounded-pill">Ver en Steam</a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card-body">
-              <a href="https://store.steampowered.com/app/1897870/Proto_Akane/?curator_clanid=43858530" target="_blank" class="btn btn-primary rounded-pill">Ver en Steam</a>
             </div>
           </div>
         </div>
@@ -870,25 +856,23 @@
                       <div class="col-12 mt-4">
                         Lanzado en 2023 - Disponible para Windows
                       </div>
-                      <div class="col-12 mt-4">
+                      <div class="col-12 mt-4 mb-3">
                         <video class="w-100" controls muted>
                           <source src="Images/Proyectos/botschaos/trailer.mp4" type="video/mp4">
                           Your browser does not support the video tag.
                         </video>
                       </div>
+                      <a href="https://store.steampowered.com/app/2336970/Bots_Chaos/?curator_clanid=43858530" target="_blank" class="btn btn-primary col-12 col-lg-6 rounded-pill">Ver en Steam</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card-body">
-              <a href="https://store.steampowered.com/app/2336970/Bots_Chaos/?curator_clanid=43858530" target="_blank" class="btn btn-primary rounded-pill">Ver en Steam</a>
-            </div>
           </div>
         </div>
         <div class="col-12 py-5 justify-content-center icon-item reveal" style="transition-delay:0.0s">
           <span class="fs-5">
-            <a class="btn btn-primary rounded-pill" rel="noreferrer" target="_blank" href="https://lucas-fernandez.itch.io/">Ver más juegos</a>
+            <a class="btn btn-primary col-12 col-lg-4 rounded-pill" rel="noreferrer" target="_blank" href="https://lucas-fernandez.itch.io/">Ver más juegos</a>
           </span>
         </div>
       </section>
@@ -896,7 +880,7 @@
       <section id="contact" class="row py-5 justify-content-center yellow-background bg-gradient">
         <div class="display-6 py-5 col-12 text-white">Contacto y Redes</div>
         <div class="col-12 col-md-5 col-lg-2 mb-5 icon-item reveal" style="transition-delay:0.0s">
-          <a class="btn btn-primary fs-5 p-3 w-100" target="_blank" href="LucasAntuFernándezCV.pdf" download="LucasAntuFernandezCV.pdf">
+          <a class="btn btn-primary fs-5 p-3 w-100" target="_blank" href="LucasAntuFernandezCV.pdf" download="LucasAntuFernandezCV.pdf">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
               <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0m2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755" />
             </svg>
