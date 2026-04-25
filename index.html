@@ -52,19 +52,13 @@
       text-align: justify;
     }
 
-    .name-text {
-      color: black;
-      font-size: 3em;
-    }
-
     .nav-link {
       background-color: rgb(255 255 255 / 0);
-      border-radius: 5px;
     }
 
     .nav-link.active {
-      transition: all 0.5s ease;
-      transition-delay: 0;
+      transition: all 1s ease;
+      transition-delay: 0.2s;
       background-color: rgb(0 0 0 / 0.5);
     }
 
@@ -79,7 +73,7 @@
 
     .reveal {
       opacity: 0;
-      transition: opacity 1s ease;
+      transition: opacity 0.8s ease;
     }
 
     .icon-item {
@@ -129,25 +123,25 @@
       <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarNav">
+      <div class="collapse navbar-collapse  mt-3 mt-lg-0" id="navbarNav">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item px-3">
-            <a class="nav-link px-3 active" href="#about">Sobre Mí</a>
+          <li class="nav-item px-3 ">
+            <a class="nav-link px-3 rounded active" href="#about">Sobre Mí</a>
           </li>
           <li class="nav-item px-3">
-            <a class="nav-link px-3" href="#experience">Experiencia</a>
+            <a class="nav-link px-3 rounded" href="#experience">Experiencia</a>
           </li>
           <li class="nav-item px-3">
-            <a class="nav-link px-3" href="#education">Formación</a>
+            <a class="nav-link px-3 rounded" href="#education">Formación</a>
           </li>
           <li class="nav-item px-3">
-            <a class="nav-link px-3" href="#webProjects">Proyectos Web</a>
+            <a class="nav-link px-3 rounded" href="#webProjects">Proyectos Web</a>
           </li>
           <li class="nav-item px-3">
-            <a class="nav-link px-3" href="#gameProjects">Videojuegos</a>
+            <a class="nav-link px-3 rounded" href="#gameProjects">Videojuegos</a>
           </li>
           <li class="nav-item px-3">
-            <a class="nav-link px-3" href="#contact">Contacto y Redes</a>
+            <a class="nav-link px-3 rounded" href="#contact">Contacto y Redes</a>
           </li>
         </ul>
       </div>
@@ -193,7 +187,7 @@
           </div>
         </div>
         <div class="row justify-content-center mb-5 reveal" style="transition-delay:0.6s">
-          <div class="col-12 col-md-8 col-lg-10">
+          <div class="col-12 col-md-9 col-lg-7">
             <p class="fs-5 pt-4 pt-md-1 profesional-profile text-white">
               Licenciado en Informática especializado en desarrollo de software, con experiencia profesional en desarrollo de videojuegos con C# y Unity;
               y actualmente ampliando mi perfil hacia el desarrollo backend con ASP.NET Core, aplicando buenas prácticas, patrones de diseño,
@@ -202,7 +196,7 @@
           </div>
         </div>
         <div class="row justify-content-center mb-5 text-black">
-          <div class="col-12 col-md-6 col-lg-4 mb-3 reveal" style="transition-delay:1.1s">
+          <div class="col-12 col-md-5 col-lg-3 mb-3 reveal" style="transition-delay:1.1s">
             <div class="row p-3 me-md-1 me-lg-1 justify-content-center clear-background rounded">
               <div class="fs-5 col-12 mb-3">Videojuegos</div>
               <div class="col-6 col-xl-3 g-2">
@@ -219,24 +213,24 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-3 reveal" style="transition-delay:1.2s">
+          <div class="col-12 col-md-5 col-lg-3 mb-3 reveal" style="transition-delay:1.2s">
             <div class="row p-3 justify-content-center clear-background rounded">
               <div class="fs-5 col-12 mb-3">Backend</div>
-              <div class="col-6 col-xl-3 g-2">
+              <div class="col-6 col-xl-4 g-2">
                 <img class="col-12 icon-medium img-fluid" src="./Images/Logos/cSharp.svg" />
                 <span class="skill-text">C#</span>
               </div>
-              <div class="col-6 col-xl-3 g-2">
+              <div class="col-6 col-xl-4 g-2">
                 <img class="col-12 icon-medium img-fluid" src="./Images/Logos/netframework-1.svg" />
                 <span class="skill-text">ASP.NET</span>
               </div>
-              <div class="col-6 col-xl-3 g-2">
+              <div class="col-6 col-xl-4 g-2">
                 <img class="col-12 icon-medium img-fluid" src="./Images/Logos/sql-server2022.svg" />
                 <span class="skill-text">SQL Server</span>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4 mb-3 reveal " style="transition-delay:1.3s">
+          <div class="col-12 col-md-10 col-lg-3 mb-3 reveal " style="transition-delay:1.3s">
             <div class="row p-3 ms-lg-1 justify-content-center clear-background rounded">
               <div class="fs-5 col-12 mb-3">Frontend</div>
               <div class="col-6 col-xl-3 g-2">
@@ -260,7 +254,7 @@
         </div>
       </section>
       <!--Experience-->
-      <section id="experience" class="row pt-5 bg-gradient yellow-background">
+      <section id="experience" class="row pt-3 bg-gradient yellow-background">
         <div class="display-6 pt-5 col-12 h-25 text-white">Experiencia</div>
         <div class="accordion my-5 mx-auto col-12 col-md-10 col-lg-8" id="experienceExample">
           <div class="accordion-item mb-5 reveal" style="transition-delay:0.1s">
@@ -393,7 +387,7 @@
         </div>
       </section>
       <!--Education-->
-      <section id="education" class="row pt-5 bg-gradient  yellow-background">
+      <section id="education" class="row pt-3 bg-gradient  yellow-background">
         <div class="display-6 pt-5 col-12 h-25 text-white">Formación</div>
         <div class="col-12 col-md-10 col-lg-8 accordion my-5 mx-auto" id="educationAccordion">
           <div class="accordion-item mb-5 reveal" style="transition-delay:0.1s">
@@ -479,7 +473,7 @@
         </div>
       </section>
       <!--Web Projects-->
-      <section id="webProjects" class="row py-5 justify-content-center bg-gradient yellow-background">
+      <section id="webProjects" class="row pt-3 justify-content-center bg-gradient yellow-background">
         <div class="display-6 py-5 col-12 h-25 text-white">Proyectos Web</div>
         <div class="col-12 col-md-6 col-lg-4 col-xxl-3 gx-3 reveal mb-4" style="transition-delay:0.1s">
           <div class="card">
@@ -594,7 +588,7 @@
         </div>
       </section>
       <!--Game Proyects-->
-      <section id="gameProjects" class="row py-5 justify-content-center bg-gradient yellow-background">
+      <section id="gameProjects" class="row pt-3 justify-content-center bg-gradient yellow-background">
         <div class="display-6 py-5 col-12 h-25 text-white">Videojuegos</div>
         <div class="col-12 col-md-6 col-lg-4 col-xxl-3 gx-3 pb-4 reveal" style="transition-delay:0.1s">
           <div class="card">
@@ -870,14 +864,14 @@
             </div>
           </div>
         </div>
-        <div class="col-12 py-5 justify-content-center icon-item reveal" style="transition-delay:0.0s">
+        <div class="col-12 py-5 mb-2 justify-content-center icon-item reveal" style="transition-delay:0.0s">
           <span class="fs-5">
             <a class="btn btn-primary col-12 col-lg-4 rounded-pill" rel="noreferrer" target="_blank" href="https://lucas-fernandez.itch.io/">Ver más juegos</a>
           </span>
         </div>
       </section>
       <!--Contact-->
-      <section id="contact" class="row py-5 justify-content-center yellow-background bg-gradient">
+      <section id="contact" class="row pt-3 justify-content-center yellow-background bg-gradient">
         <div class="display-6 py-5 col-12 text-white">Contacto y Redes</div>
         <div class="col-12 col-md-5 col-lg-2 mb-5 icon-item reveal" style="transition-delay:0.0s">
           <a class="btn btn-primary fs-5 p-3 w-100" target="_blank" href="LucasAntuFernandezCV.pdf" download="LucasAntuFernandezCV.pdf">
